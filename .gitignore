@@ -1,1 +1,2 @@
-# lowcode-project
+.venv/
+__pycache__/
