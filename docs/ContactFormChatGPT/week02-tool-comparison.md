@@ -1,7 +1,11 @@
 # Week 2 — AI Tool Comparison
  
 ## The requirement
-(one paragraph)
+Add a contact form to your Flask application. It must:
+- render at /contact with fields for name, email and message
+- validate that the email address is well-formed server side
+- reject empty name or message fields with a visible error
+- on success, show a confirmation page
  
 ## Prompts used
 ### CHATgpt
