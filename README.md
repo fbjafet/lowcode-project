@@ -110,19 +110,19 @@ python app.py
 http://127.0.0.1:5000/C:/Users/fabia/Documents/lowcode-project
 
 ```
+
+
+
 3\. To stop the server, press `Ctrl + C` in your terminal.
 
-``
 
-## Project Idea
+*******************************************************************
+
+# Project Note
 
 What would you build if it took an evening instead of a quarter?
 
 If I only have an evening I would build an App to organize my agenda, both personal and professional. In this App I would gather the information from WhatsApp groups, email accounts and online calendars, and create tasks to be done by day and/or month as well as show me the subscriptions that are active on my accounts, future events, and bills to be paid. All things separated by sections on the App with respective push notifications.
 For bills and subscriptions, the App will create a task on my calendar, job related tasks would be gathered in a planner, and for future events only a reminder will be shown with the option to engage or discard the event. This App will incorporate Microsoft and Google tools and will run an automation through all requested platforms.
-
-
-
-
 
 
