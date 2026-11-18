@@ -110,6 +110,9 @@ python app.py
 http://127.0.0.1:5000/C:/Users/fabia/Documents/lowcode-project
 
 ```
+3\. To stop the server, press `Ctrl + C` in your terminal.
+
+``
 
 ## Project Idea
 
@@ -121,5 +124,5 @@ For bills and subscriptions, the App will create a task on my calendar, job rela
 
 
 
-3\. To stop the server, press `Ctrl + C` in your terminal.
+
 
