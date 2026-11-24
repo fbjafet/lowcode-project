@@ -1,0 +1,35 @@
+fabiana@LAPTOP-19F2GD12 UCRT64 ~/Documents/lowcode-project/docs/portfolio (docs)
+$ curl -i -X POST localhost:5000/hooks/signup -H 'Content-Type: application/json' \
+  -d '{"name":"Ada","email":"ada@example.com","company":"AE"}'
+HTTP/1.1 200 OK
+Server: Werkzeug/3.1.9 Python/3.15.0
+Date: Mon, 23 Nov 2026 19:57:17 GMT
+Content-Type: application/json
+Content-Length: 33
+Connection: close
+
+{"reference":"CB-20261123-8624"}
+
+fabiana@LAPTOP-19F2GD12 UCRT64 ~/Documents/lowcode-project/docs/portfolio (docs)
+$ curl -i -X POST localhost:5000/hooks/signup -H 'Content-Type: application/json' \
+  -d '{"name":"Ada","email":"not-an-email","company":"AE"}'
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.1.9 Python/3.15.0
+Date: Mon, 23 Nov 2026 19:59:01 GMT
+Content-Type: application/json
+Content-Length: 35
+Connection: close
+
+{"error":"Invalid email address."}
+
+fabiana@LAPTOP-19F2GD12 UCRT64 ~/Documents/lowcode-project/docs/portfolio (docs)
+$ curl -i -X POST localhost:5000/hooks/signup -H 'Content-Type: application/json' \
+  -d '{"name":"Ada","email":"ada@example.com","company":"   "}'
+HTTP/1.1 400 BAD REQUEST
+Server: Werkzeug/3.1.9 Python/3.15.0
+Date: Mon, 23 Nov 2026 19:59:17 GMT
+Content-Type: application/json
+Content-Length: 56
+Connection: close
+
+{"error":"Missing or empty required field(s): company"}
